@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/appbg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dialog_linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_back_lang"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:adjustViewBounds="true"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/ic_back" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/dp_10"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="center"
+                        android:text="@string/chanelanguage"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:textStyle="bold"/>
+
+
+
+                </LinearLayout>
+
+            </com.google.android.material.appbar.MaterialToolbar>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/langs"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:id="@+id/radio_group_lang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/dp_15">
+
+                <RadioButton
+                    android:id="@+id/radio_btn_english"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:background="@drawable/radio_button_custom"
+                    android:includeFontPadding="true"
+                    android:text="@string/english"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/appcolor" />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_hindi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:background="@drawable/radio_button_custom"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:checked="false"
+                    android:includeFontPadding="false"
+                    android:text="@string/hindi"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/appcolor" />
+
+                <RadioButton
+                    android:visibility="gone"
+                    android:id="@+id/radio_btn_gujarati"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsregular"
+                    android:textStyle="bold"
+                    android:paddingLeft="@dimen/dp_5"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/radio_button_custom"
+                    android:checked="false"
+                    android:text="@string/gujrati"
+                    android:textSize="@dimen/sp_16"
+                    android:textColor="@color/appcolor" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_cl"
+            android:layout_width="@dimen/dp_200"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/appcolor"
+            android:fontFamily="@font/poppinsregular"
+            android:textStyle="bold"
+            android:text="@string/save"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</FrameLayout>

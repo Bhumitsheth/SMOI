@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appbg"
+    android:orientation="vertical"
+    tools:context=".Screens.NavFragments.QrScanner">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/aapbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_back_qrscnr"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:text="@string/qr_scanner"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/txtBarcodeValue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLength="10"
+        android:gravity="start|center_vertical"
+        android:fontFamily="@font/poppinsregular"
+        android:cursorVisible="true"
+        android:hint="@string/enter_label"
+        android:textColorHint="@color/gray"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13ssp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsbold"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        android:text="@string/next" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/gray"
+            android:layout_gravity="center"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/poppinsregular"
+            android:gravity="center"
+            android:text="OR"
+            android:textColor="@color/gray"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@color/gray"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"/>
+
+
+    </RelativeLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_qr_scaneer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppinsbold"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_12ssp"
+        android:textAllCaps="false"
+        android:text="@string/qr_scanner" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_qr_scan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:gravity="center">
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="@dimen/_300sdp"
+            android:layout_height="@dimen/_300sdp"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_centerInParent="true"
+            android:background="@color/appcolor"
+            android:layout_height="@dimen/_300sdp"/>
+
+        <View
+            android:visibility="gone"
+            android:layout_width="@dimen/dp_350"
+            android:layout_height="@dimen/dp_1"
+            android:layout_centerInParent="true"
+            android:background="@color/appcolor" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

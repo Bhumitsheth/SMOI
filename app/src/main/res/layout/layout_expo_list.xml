@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:background="@color/appbg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/containerRL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview_expo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            app:cardCornerRadius="@dimen/_7sdp">
+
+            <LinearLayout
+                android:id="@+id/llContainerMCV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+                    <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+                        android:id="@+id/img_expo_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_100sdp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/bg" />
+                    <ImageView
+                        android:id="@+id/img_expo_menu"
+                        android:visibility="visible"
+                        android:layout_width="@dimen/_23sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:paddingStart="@dimen/_12sdp"
+                        android:paddingEnd="@dimen/_7sdp"
+                        android:paddingTop="@dimen/_5sdp"
+                        android:paddingBottom="@dimen/_5sdp"
+                        android:layout_gravity="end"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_menu" />
+                </androidx.cardview.widget.CardView>
+
+                <RelativeLayout
+                    android:id="@+id/rl_text"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@color/white"
+                    android:backgroundTint="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="Title :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_12ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_title_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_toEndOf="@+id/tv_title"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text=""
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_14ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title_val"
+                        android:layout_marginEnd="@dimen/_5sdp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="Date :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title_val"
+                        android:layout_toEndOf="@+id/tv_date"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:text="19 Oct, 2022"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_title_val"
+                        android:layout_marginBottom="@dimen/_5sdp"
+                        android:paddingLeft="-2dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="@dimen/_14sdp"
+                            android:layout_height="@dimen/_14sdp"
+                            android:padding="@dimen/dp_2"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ic_time" />
+
+                        <TextView
+                            android:id="@+id/tv_date_val"
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/_14sdp"
+                            android:layout_marginStart="@dimen/_2sdp"
+                            android:fontFamily="@font/poppinsregular"
+                            android:text=""
+                            android:textColor="@color/darkgray"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

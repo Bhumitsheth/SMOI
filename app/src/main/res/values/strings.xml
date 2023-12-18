@@ -1,0 +1,252 @@
+<resources>
+    <string name="app_name">SMOI</string>
+
+    <string name="gmap_api_key">AIzaSyCBZGaavYXG1eBZJS7VCLi3WraqOtpqzzE</string>
+
+
+    <string name="silkmarkorgofindia">Silk Mark Organization of India</string>
+    <string name="silkmarkorgofindiau"><u>Silk Mark Organization of India</u></string>
+    <string name="home">Home</string>
+    <string name="members">Members</string>
+    <string name="offline">Offline</string>
+    <string name="payment_mode">Payment Mode: Offline</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="select_your_payment_method">Select Your Payment Method</string>
+    <string name="transaction_Id">Transaction Id</string>
+
+    <string name="qrcode_upi">QR Code/ UPI</string>
+    <string name="neft">NEFT</string>
+    <string name="rtgs">RTGS</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="other">Other</string>
+
+    <string name="required_label">Required Labels (eg. 100 or 200)</string>
+    <string name="payable_amount">Payable Amount</string>
+    <string name="request_label_for_silkmar">Request For Silk Mark Labels</string>
+    <string name="request_label">Request Labels</string>
+    <string name="expolist">Expo List</string>
+    <string name="expo_name">Expo Name</string>
+    <string name="expo_start_date">Expo Start Date</string>
+    <string name="expo_end_date">Expo End Date</string>
+    <string name="available_stalls">Available Stalls</string>
+    <string name="stall_size">Stall Size (eg.10FT * 6FT)</string>
+    <string name="slug">Slug</string>
+    <string name="add_expo_fields">Add Expo Fields</string>
+    <string name="expo_booking">Expo Booking</string>
+    <string name="expo_venue">Expo Venue</string>
+    <string name="booking">Booking</string>
+    <string name="stall_booking">Stall Booking</string>
+
+    <string name="create_expo_stalls">Create Expo Stalls</string>
+    <string name="book_stall">Book Stall</string>
+    <string name="add_stall">Added Stall</string>
+    <string name="download">Download</string>
+    <string name="stall_list">Stalls List</string>
+    <string name="update_stall">Update Stall Details</string>
+    <string name="expo_stall_details">View Expo Stall Details</string>
+    <string name="view_added_stall">View Added Stall</string>
+    <string name="view_booked_stall">View Booked Stall</string>
+
+
+    <string name="one">1</string>
+    <string name="stall_no_from">Stall No. From</string>
+    <string name="no_of_stall">No. of Stall</string>
+    <string name="stall_no_to">Stall No. To</string>
+    <string name="stall_rent">Stall Rent</string>
+    <string name="gst_per">GST (%)</string>
+    <string name="gst_amount">GST Amount</string>
+    <string name="total">Total</string>
+    <string name="expo_details">Expo Details</string>
+    <string name="contacts">Contacts</string>
+    <string name="contact_details">Contact Details</string>
+    <string name="flourish">Flourish</string>
+    <string name="flourishlist">Flourish List</string>
+    <string name="calender_events">Calender Events</string>
+    <string name="memberdetails">Member Details</string>
+    <string name="chapterdetails">Chapter Details</string>
+    <string name="qr_scanner">QR Scanner</string>
+    <string name="test_center">Test Center</string>
+    <string name="scan_qr">Scan QR</string>
+    <string name="enter_label">Enter Label No.(eg.A-00000001)</string>
+    <string name="faqs">FAQs</string>
+    <string name="search">Search</string>
+    <string name="search_here">Search Here...</string>
+    <string name="search_dots">Search...</string>
+
+
+    <string name="reference_no">Reference No.</string>
+    <string name="name_of_the_owner">Name of the Owner</string>
+    <string name="name_of_the_company">Name of the Company</string>
+    <string name="door_no">Door No.</string>
+    <string name="street_no_or_name">Street No./Name</string>
+    <string name="location">Location</string>
+    <string name="district">District</string>
+    <string name="contact_person">Contact Person</string>
+    <string name="contact_no">Contact No.</string>
+    <string name="telephone_no">Telephone No.</string>
+    <string name="company_status">Company Status</string>
+    <string name="product_covered">Product Covered</string>
+    <string name="product_speciality">Product Speciality</string>
+    <string name="awards">Awards</string>
+    <string name="specific_info">Specific Information</string>
+
+
+    <string name="select_transaction_image">Select Transaction Image</string>
+    <string name="select_signature_image">Select Signature Image</string>
+    <string name="select_expo_poster">Select Expo Poster</string>
+    <string name="select_type_of_labels">Select Type of Labels</string>
+    <string name="select_state">Select State</string>
+    <string name="select_city">Select City</string>
+    <string name="select_chapter">Select Chapter</string>
+    <string name="select_company_status">Select Company Status</string>
+    <string name="select_stall">Select Stall</string>
+    <string name="select_your_stall_no">Select Your Stall No.</string>
+    <string name="preferred_stall_no">Preferred Stall No.</string>
+
+    <string name="search_state">Search State</string>
+    <string name="search_city">Search City</string>
+
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aboutus">About Us</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="aboutus_text">Natural silk, unfolded in its finest sensuous form, is nature\'s bounty to humankind. The enchanting sheen, amazing drape, enamouring feel, and radiant resplendence are some of its most distinct characteristics. The beauty of natural silk is so alluring that it even drove our ancestors to make it a part of many religious rituals.
+The effort to artificially manufacture natural silk has led to the invention of a host of fibres like nylon and rayon, but an exact duplication of natural silk has so far proved difficult. Natural silk, thus, still remains the Queen of Textiles in all its glory.</string>
+
+    <string name="navigation_drawer_open">NavigationDrawerOpen</string>
+    <string name="navigation_drawer_close">NavigationDrawerClose</string>
+    <string name="aboutsmoi">About SMOI</string>
+    <string name="design_amp_developed_by_n_inbox_infotech_pvt_ltd"><![CDATA[Design & Developed By\n Inbox Infotech Pvt. Ltd.]]></string>
+    <string name="chapter">Chapter</string>
+    <string name="conducting_chapter_address">Conducting Chapter Address</string>
+    <string name="other_information">Other Information</string>
+    <string name="details_intimation_letter">Details of Intimation Letter</string>
+    <string name="stall_rent_details">Stall Rent Details</string>
+    <string name="fill_up_stall_rent_details">Fill up stall rent details</string>
+    <string name="chapters">Chapters</string>
+    <string name="label">Label</string>
+    <string name="labelss">Labels</string>
+    <string name="label_details">Label Details</string>
+    <string name="gallery">Gallery</string>
+    <string name="gallery_images">Gallery Images</string>
+    <string name="news">News</string>
+    <string name="events">Events</string>
+    <string name="labelsonly">Labels</string>
+    <string name="create_new_label_request">Create New Label Request</string>
+    <string name="labels">Labels :</string>
+    <string name="requested_to_name">Requested to :</string>
+    <string name="requested_by_name">Requested by :</string>
+    <string name="searchlabel">Search Label</string>
+    <string name="availablelabel">Available Labels</string>
+    <string name="distributionlabel">Distribution Labels</string>
+    <string name="distributedlabel">Distributed Labels</string>
+    <string name="profile">Profile</string>
+    <string name="yourprofile">Your Profile</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="send_request">Send Request</string>
+    <string name="chanelanguage">Change Language</string>
+    <string name="tc"><![CDATA[Terms & Conditions]]></string>
+    <string name="helpsupport"><![CDATA[Help & Support]]></string>
+    <string name="blog">Blog</string>
+    <string name="blogs">Blogs</string>
+    <string name="recentblog">Recent Blog</string>
+    <string name="bloglist">Blog List</string>
+    <string name="blogdetails">Blog Details</string>
+    <string name="newsdetails">News Details</string>
+    <string name="title_activity_blog_details">BlogDetailsActivity</string>
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="submit_expo">Submit Expo Form</string>
+    <string name="submit">Submit</string>
+    <string name="cancel">Cancel</string>
+    <string name="book_your_stall">Book Your Stall</string>
+    <string name="addmore_stall">Add More Stall</string>
+    <string name="bookmore_stall">Book More Stall</string>
+    <string name="previous">Previous</string>
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="view">View</string>
+    <string name="viewall"><u>View All</u></string>
+    <string name="description">Description</string>
+    <string name="desc">Description:</string>
+    <string name="blogdesc">Blog Description:</string>
+    <string name="newsdesc">News Description:</string>
+    <string name="ordered">Ordered:</string>
+    <string name="save">Save</string>
+    <string name="upload">Upload</string>
+    <string name="upload_images">Upload Images</string>
+    <string name="update">Update</string>
+    <string name="message">Chose your required options</string>
+    <string name="gujrati">ગુજરાતી</string>
+    <string name="hindi">हिन्दी</string>
+    <string name="english">English</string>
+    <string name="firstname">First Name</string>
+    <string name="lastname">Last Name</string>
+    <string name="email">Email</string>
+    <string name="mobileno">Mobile No.</string>
+    <string name="department">Department</string>
+    <string name="delete">Delete</string>
+    <string name="details">Details</string>
+    <string name="edit">Edit</string>
+    <string name="reset_all">Reset All</string>
+    <string name="address">Address</string>
+    <string name="url">URL</string>
+    <string name="url_colon">URL:</string>
+    <string name="area">Area</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pincode">Pin Code</string>
+    <string name="smoi_letter_no">SMOI Letter No.</string>
+    <string name="police_station_details">Name &amp; Address of Police Station </string>
+    <string name="fire_station_details">Name &amp; Address of Fire Station </string>
+    <string name="income_tax_office_details">Name &amp; Address of Income Tax Office</string>
+    <string name="local_municipal_corp_details">Name &amp; Address of Local Municipal Corporation</string>
+    <string name="insuraance_company_details">Name &amp; Address of Insurance Company</string>
+    <string name="details_of_floor_plan">Details of Floor Plan</string>
+    <string name="seemore">See More...</string>
+    <string name="readmore">Read More</string>
+    <string name="readmorewith3dots">Read More...</string>
+    <string name="go">Go</string>
+
+    <string name="create_req_label">Create Request Labels</string>
+
+    <string name="notifications">Notifications</string>
+
+    <string name="silkcare">Silk Care</string>
+    <string name="buysilks">Buy Silks</string>
+    <string name="testsilk">Test Silk</string>
+    <string name="qrscan">QR Scan</string>
+    <string name="silks">Silks</string>
+    <string name="silk_fabric">Silk Fabric</string>
+    <string name="varieties_of_silk_fabric">Varieties of Silk Fabric</string>
+    <string name="reviews">Reviews</string>
+
+
+    <string name="createdat">Created Date :</string>
+    <string name="typeoflabel">Type Of Label :</string>
+    <string name="distributed_to">Distributed to :</string>
+    <string name="distributed_on">Distributed on :</string>
+    <string name="series">Series :</string>
+    <string name="label_from">Label from :</string>
+    <string name="label_to">Label to :</string>
+    <string name="quantity">Qty :</string>
+    <string name="remainquantity">Remain Quantity :</string>
+    <string name="avlquantity">Avl. Qty :</string>
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="title_activity_chapter_maps">Chapter Maps Activity</string>
+    <string name="title_activity_test_silk_maps">TestSilkMapsActivity</string>
+    <string name="verify">Verify</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="your_otp_send_on">Your OTP Send On</string>
+    <string name="register_mobile_number_email_id">Register Mobile Number / Email Id</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="change_password">Change Password</string>
+
+
+</resources>

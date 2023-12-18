@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/option_background_inner"/>
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="@color/transparent"/>
+            <stroke
+                android:width="@dimen/_1sdp"
+                android:color="@color/appcolor" />
+            <corners android:radius="@dimen/_7sdp"/>
+        </shape>
+    </item>
+
+</layer-list>

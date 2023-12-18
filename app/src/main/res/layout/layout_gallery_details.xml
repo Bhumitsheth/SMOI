@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appbg">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_4sdp"
+        app:cardCornerRadius="@dimen/_7sdp">
+
+        <ozaydin.serkan.com.image_zoom_view.ImageViewZoom
+            android:id="@+id/img_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_200sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_launcher_background" />
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:visibility="gone"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:paddingStart="@dimen/_12sdp"
+            android:paddingEnd="@dimen/_7sdp"
+            android:paddingTop="@dimen/_5sdp"
+            android:paddingBottom="@dimen/_5sdp"
+            android:layout_gravity="end"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_menu" />
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

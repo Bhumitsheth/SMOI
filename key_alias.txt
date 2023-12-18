@@ -1,0 +1,8 @@
+
+Alias => smoi
+password =>smoismoi
+organization => Inbox Infotech pvt ltd
+city => vadodara
+state => Gujarat
+Country => India
+validity =>100yr

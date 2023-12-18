@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/img_back_profile"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_gravity="center"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:textSize="@dimen/_14ssp"
+                    android:fontFamily="@font/poppinsregular"
+                    android:gravity="center"
+                    android:text="@string/yourprofile"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:gravity="end">
+                    <ImageView
+                        android:id="@+id/img_edit"
+                        android:layout_width="@dimen/_25sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        android:src="@drawable/ic_edit"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="end"/>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.appbar.MaterialToolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/dsgn4Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="true"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_30sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/image_contact"
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/transparent"
+                android:elevation="@dimen/_3sdp"
+                android:src="@drawable/bg"
+                app:civ_border_color="@color/light_grey"
+                app:civ_border_width="@dimen/_2sdp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/mcvLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="@dimen/_40sdp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="@dimen/_5sdp">
+
+                <RelativeLayout
+                    android:id="@+id/parentRelative"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/appbg"
+                    android:paddingTop="@dimen/_60sdp">
+
+                    <TextView
+                        android:id="@+id/tv_username"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Username :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_username_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_username"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="admin"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_first_name"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_username"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="First name :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_first_name_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_username_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_first_name"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Corporate"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_last_name"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_first_name"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Last Name :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_last_name_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_first_name_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_first_name"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Office"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_last_name"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Email :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_email_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_last_name_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_email"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="admin@admin.com"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile_no"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_email"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Mobile no :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_mobile_no_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_email_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_mobile_no"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="1234567890"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <!--<TextView
+                        android:id="@+id/tv_telephone1"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_mobile_no"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Telephone 1 :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_telephone1_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_mobile_no_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_telephone1"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="024567-45678"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_telephone2"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_telephone1"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Telephone 2 :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_telephone2_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_telephone1_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_telephone2"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="024567-45678"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />-->
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="150dp"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_below="@+id/tv_mobile_no"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Address :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_address_val"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_70sdp"
+                        android:layout_below="@+id/tv_mobile_no_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_address"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="5"
+                        android:paddingEnd="10dp"
+                        android:text="Karnataka"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <!--
+                                        <TextView
+                                            android:id="@+id/tv_area"
+                                            android:layout_width="150dp"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tv_address"
+                                            android:layout_marginStart="10dp"
+                                            android:layout_marginTop="15dp"
+                                            android:ellipsize="end"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:gravity="start"
+                                            android:maxLines="1"
+                                            android:paddingEnd="10dp"
+                                            android:text="Area :"
+                                            android:textColor="@color/appcolor"
+                                            android:textSize="14sp"
+                                            android:textStyle="bold"
+                                            tools:ignore="HardcodedText,RtlSymmetry" />
+                    -->
+
+                    <!--
+                                        <TextView
+                                            android:id="@+id/tv_area_val"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_below="@+id/tv_address_val"
+                                            android:layout_marginTop="15dp"
+                                            android:layout_marginEnd="10dp"
+                                            android:layout_toEndOf="@+id/tv_area"
+                                            android:ellipsize="end"
+                                            android:fontFamily="@font/poppinsregular"
+                                            android:gravity="start"
+                                            android:maxLines="1"
+                                            android:paddingEnd="10dp"
+                                            android:text="Near Airport"
+                                            android:textColor="@color/black"
+                                            android:textSize="14sp"
+                                            tools:ignore="HardcodedText,RtlSymmetry" />
+                    -->
+
+                    <TextView
+                        android:id="@+id/tv_city"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_address"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="City :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_city_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_address_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_city"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Banglore"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_state"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_city"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="State :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_state_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_city_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_state"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Karnataka"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_pincode"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_state"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="15dp"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="Pincode :"
+                        android:textColor="@color/appcolor"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <TextView
+                        android:id="@+id/tv_pincode_val"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_state_val"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_toEndOf="@+id/tv_pincode"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppinsregular"
+                        android:gravity="start"
+                        android:maxLines="1"
+                        android:paddingEnd="10dp"
+                        android:text="321000"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        tools:ignore="HardcodedText,RtlSymmetry" />
+
+                    <View
+                        android:id="@+id/view_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_below="@id/tv_pincode" />
+
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_change_password"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mcvLayout"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsbold"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="Change Password"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,RtlSymmetry" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

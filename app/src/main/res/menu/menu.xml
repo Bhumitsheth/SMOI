@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:id="@+id/g1"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_home_filled"
+            android:title="@string/home" />
+
+        <item
+            android:id="@+id/nav_qr_scanner"
+            android:icon="@drawable/ic_qr_scanner"
+            android:title="@string/qr_scanner" />
+
+        <item
+            android:id="@+id/nav_test_center"
+            android:icon="@drawable/ic_test_center"
+            android:title="@string/test_center" />
+
+    </group>
+
+    <group
+        android:id="@+id/g2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_news"
+            android:icon="@drawable/ic_news_vector"
+            android:title="@string/news"/>
+
+        <item
+            android:id="@+id/nav_events"
+            android:icon="@drawable/ic_events"
+            android:title="@string/events"/>
+
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/ic_gallery_vector"
+            android:title="@string/gallery"/>
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_label"
+            android:icon="@drawable/ic_label_vector"
+            android:title="@string/labelss"/>
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_contact_list"
+            android:icon="@drawable/ic_contact_list_vector"
+            android:title="@string/contacts" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_chapter"
+            android:icon="@drawable/ic_members_vector"
+            android:title="@string/chapters" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_au_members"
+            android:icon="@drawable/ic_members_vector"
+            android:title="@string/members" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_expo_list"
+            android:icon="@drawable/ic_expo_booking_list_vector"
+            android:title="@string/expolist" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_flourish"
+            android:icon="@drawable/ic_flourish_vector"
+            android:title="@string/flourish" />
+
+    </group>
+
+    <group
+        android:id="@+id/g5"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_faqs"
+            android:icon="@drawable/faq"
+            android:title="@string/faqs" />
+        <item
+            android:id="@+id/nav_helpsupport"
+            android:icon="@drawable/ic_help"
+            android:title="@string/helpsupport" />
+
+        <item
+            android:id="@+id/nav_tc"
+            android:icon="@drawable/ic_notes"
+            android:title="@string/tc" />
+
+        <item
+            android:id="@+id/nav_aboutsmoi"
+            android:icon="@drawable/ic_aboutus"
+            android:title="@string/aboutsmoi" />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_"-->
+<!--            android:title="" />-->
+
+
+    </group>
+
+    <group
+        android:id="@+id/g6"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_login"
+            android:title="@string/login" />
+
+        <item
+            android:visible="false"
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/logout" />
+
+    </group>
+
+</menu>
